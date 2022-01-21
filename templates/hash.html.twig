@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto Hash</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>batch</th>
+        <th>nblock</th>
+        <th>string</th>
+        <th>generatedkey</th>
+        <th>generatedhash</th>
+        <th>attemps</th>
+        <th>hashIdentifier</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for hashs in hashInserted %}
+        <tr>
+            <td>{{ hashs.getId }}</td>
+            <td>{{ hashs.getBatch }}</td>
+            <td>{{ hashs.getNblock }}</td>
+            <td>{{ hashs.getString }}</td>
+            <td>{{ hashs.getGeneratedkey }}</td>
+            <td>{{ hashs.getGeneratedhash }}</td>
+            <td>{{ hashs.getAttemps }}</td>
+            <td>{{ hashs.getHashIdentifier }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
