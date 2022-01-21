@@ -1,0 +1,12 @@
+OBS: Para utilizar a hash é necessario ter instalado em seu pc a versão do PHP 8.0.2 ou wampserver e também 
+o Git para dar o comando
+
+1 - Passo execute o comando abaixo  
+ " symfony console avato:test Avato --requests=2 "
+
+Esse comando irá consultar a rota criada 
+
+2 - Esse segundo comando eu criei para a web localhost, caso queira executar também irá funcionar 
+
+
+  " Symfony command pra gerar os hashs bonitin " 
